@@ -6,7 +6,7 @@ run apt remove -y `
 firefox
 
 # chinese and common tools
-run apt install -y `
+run apt update -y && apt install -y `
 chromium-browser `
 language-pack-zh* `
 fonts-arphic-ukai `
