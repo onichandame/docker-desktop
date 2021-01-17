@@ -7,7 +7,7 @@ from rattydave/docker-ubuntu-xrdp-mate-custom:20.04
 
 # chinese and common tools
 run apt update -y && apt install -y `
-language-pack-zh* `
+language-pack-zh-hans `
 fonts-arphic-ukai `
 ibus `
 ibus-sunpinyin
