@@ -1,7 +1,7 @@
 #!/bin/sh
 
 function start_desktop(){
-  /root/autostartup.sh &
+  docker-entrypoint.sh supervisord &
 }
 
 function start_ibus(){
@@ -15,8 +15,9 @@ function setup_shortcuts(){
 
 start_desktop
 # wait for desktop env to start
+sleep 10
 start_ibus
-#setup_shortcuts
+setup_shortcuts
 
 # frontend keep alive
 "$@"

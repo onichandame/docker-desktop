@@ -1,16 +1,18 @@
 # escape=`
-from rattydave/docker-ubuntu-xrdp-mate-custom:20.04
+from danielguerra/ubuntu-xrdp
 
 # remove un-used softwares
-#run apt remove -y `
-#firefox
+run apt remove -y `
+firefox
 
 # chinese and common tools
 run apt update -y && apt install -y `
-language-pack-zh-hans `
+language-pack-zh* `
 fonts-arphic-ukai `
 ibus `
-ibus-sunpinyin
+ibus-sunpinyin `
+htop `
+iputils-ping
 
 # brave browser
 run apt install -y apt-transport-https curl gnupg
