@@ -24,6 +24,6 @@ jobs:
         uses: onichandame/docker-registry-sync-action@master
         with:
           source_repository: "docker.io/onichandame/docker-desktop"
-          target_repository: "registry.cn-hangzhou.aliyuncs.com/onichandame/docker-dev"
+          target_repository: "registry.cn-hangzhou.aliyuncs.com/onichandame/docker-desktop"
           target_username: ${{ secrets.ALIYUN_IMAGES_HUB_USER_NAME }}
           target_password: ${{ secrets.ALIYUN_IMAGES_HUB_TOKEN }}
